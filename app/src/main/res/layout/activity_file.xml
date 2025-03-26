@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context="com.intishaka.easyexternaldirectoryandroid.activities.FileActivity">
+
+    <TextView
+        style="@style/MyTextHeader"
+        android:layout_margin="@dimen/def_margin_half"
+        android:text="Function Global File" />
+
+    <Button
+        android:id="@+id/btn_create_file"
+        style="@style/MyButtonContained"
+        android:text="Create File" />
+
+    <Button
+        android:id="@+id/btn_is_file_exists"
+        style="@style/MyButtonContained"
+        android:text="Is File Exists" />
+
+    <Button
+        android:id="@+id/btn_delete_file"
+        style="@style/MyButtonContained"
+        android:text="Delete File" />
+
+    <Button
+        android:id="@+id/btn_delete_all_file"
+        style="@style/MyButtonContained"
+        android:text="Delete All File" />
+
+    <Button
+        android:id="@+id/btn_read_file"
+        style="@style/MyButtonContained"
+        android:text="Read File" />
+
+    <Button
+        android:id="@+id/btn_appenttext"
+        style="@style/MyButtonContained"
+        android:text="Appent Text" />
+</LinearLayout>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context="com.intishaka.easyexternaldirectoryandroid.MenuActivity">
+
+    <Button
+        android:id="@+id/btn_directory"
+        style="@style/MyButtonContained"
+        android:layout_margin="@dimen/def_margin_half"
+        android:text="Function Global Directory" />
+
+    <Button
+        android:id="@+id/btn_file"
+        style="@style/MyButtonContained"
+        android:layout_margin="@dimen/def_margin_half"
+        android:text="Function Global File" />
+
+    <Button
+        android:id="@+id/btn_zip"
+        style="@style/MyButtonContained"
+        android:layout_margin="@dimen/def_margin_half"
+        android:text="Function Global Zip" />
+
+    <Button
+        android:id="@+id/btn_camera"
+        style="@style/MyButtonContained"
+        android:layout_margin="@dimen/def_margin_half"
+        android:text="Function Global Camera" />
+
+    <Button
+        android:id="@+id/btn_galery"
+        style="@style/MyButtonContained"
+        android:layout_margin="@dimen/def_margin_half"
+        android:text="Function Global Galery" />
+
+    <Button
+        android:id="@+id/btn_internet"
+        style="@style/MyButtonContained"
+        android:layout_margin="@dimen/def_margin_half"
+        android:text="Function Global Image Internet" />
+
+</LinearLayout>
