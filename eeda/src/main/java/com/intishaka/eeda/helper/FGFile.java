@@ -433,7 +433,21 @@ public class FGFile {
 //    }
 
     public static File createImageFile(Context context, String fileName) throws IOException {
-        File storageDir = context.getExternalFilesDir(Environment.DIRECTORY_PICTURES);
+        // File storageDir = context.getExternalFilesDir(Environment.DIRECTORY_PICTURES);
+        File  storageDir = new File(context.getFilesDir(), Environment.DIRECTORY_PICTURES);
+        if (storageDir == null) {
+            throw new IOException("getExternalFilesDir returned null");
+        }
+        if (!storageDir.exists()) {
+            boolean created = storageDir.mkdirs();
+            if (!created) {
+                storageDir = new File(context.getFilesDir(), Environment.DIRECTORY_PICTURES);
+                if (!storageDir.exists() && !storageDir.mkdirs()) {
+                    throw new IOException("Failed to create internal directory: " + storageDir.getAbsolutePath());
+                }
+            }
+        }
+
         return File.createTempFile(fileName + "_", ".png", storageDir);
     }
 
