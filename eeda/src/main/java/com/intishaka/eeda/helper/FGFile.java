@@ -441,10 +441,11 @@ public class FGFile {
         if (!storageDir.exists()) {
             boolean created = storageDir.mkdirs();
             if (!created) {
-                storageDir = new File(context.getFilesDir(), Environment.DIRECTORY_PICTURES);
-                if (!storageDir.exists() && !storageDir.mkdirs()) {
-                    throw new IOException("Failed to create internal directory: " + storageDir.getAbsolutePath());
-                }
+                throw new IOException("Failed to create internal directory: " + storageDir.getAbsolutePath());
+//                storageDir = new File(context.getFilesDir(), Environment.DIRECTORY_PICTURES);
+//                if (!storageDir.exists() && !storageDir.mkdirs()) {
+//
+//                }
             }
         }
 
