@@ -24,7 +24,7 @@ public class FileCompressor {
     private int maxWidth = 612;
     private int maxHeight = 816;
     private Bitmap.CompressFormat compressFormat = Bitmap.CompressFormat.JPEG;
-    private int quality = 40;
+    private int quality = 20;
     private String destinationDirectoryPath;
     @SuppressLint("StaticFieldLeak")
     private static Context sContext;
